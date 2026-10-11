@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background-color: #090a12;
+  overflow-x: hidden;
+}
+
+/* Halftone screen printing texture overlays */
+.bg-halftone-red {
+  background-image: radial-gradient(rgba(255, 36, 83, 0.16) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+
+.bg-halftone-cyan {
+  background-image: radial-gradient(rgba(0, 229, 255, 0.14) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+}
+
+.bg-halftone-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1.2px, transparent 1.2px);
+  background-size: 8px 8px;
+}
+
+.bg-comic-stripes {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 36, 83, 0.12),
+    rgba(255, 36, 83, 0.12) 6px,
+    transparent 6px,
+    transparent 12px
+  );
+}
+
+/* Custom styled comic scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #090a12;
+}
+::-webkit-scrollbar-thumb {
+  background: #252c48;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff2453;
+}
