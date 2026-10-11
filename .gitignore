@@ -1,0 +1,11 @@
+node_modules/
+dist/
+bin/
+.codegraph
+internal/steg/zz_probe*_test.go
+*.log
+.DS_Store
+
+.hermes_spec.md
+HANDOFF.md
+.hermes
